@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center my-5">TO DO LIST</h1>
+
+      <h4>Add TO-DO list</h4>
+      <form>
+          <div class="form-group">
+              <label>List item</label>
+              <input id="listName" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Due date</label>
+            <select id="dueDate" class="form-control" id="exampleFormControlSelect1">
+              <option>Monday</option>
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+              <option>Friday</option>
+              <option>Saturday</option>
+              <option>Sunday</option>
+            </select>
+          </div>
+      </form>
+      <button id="addBtn" class="btn btn-primary">ADD</button>
+
+      <h4 class="mt-4">All Lists</h4>
+
+      <ul id="listBox" class="list-group">
+         <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div class="listName">Meeting
+            </div>
+            <div class="dueDate">
+              Friday
+            </div>
+            <div>
+              <button class="btn btn-warning editBtn">Edit</button>
+              <button class="btn btn-danger deleteBtn">Delete</button>
+            </div>
+          </li> -->
+
+      </ul>
+    </div>
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js" charset="utf-8"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
